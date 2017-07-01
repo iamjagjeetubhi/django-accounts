@@ -21,9 +21,7 @@ class UserForm(forms.ModelForm):
 class ProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ('birth_date', 'mobile_number', 'phone_number',
-                  'country', 'state', 'zip_code', 'city', 'district', 'photo',
-                  'about',)
+        fields = ('phone_number', 'country', 'about',)
 
 
 class PasswordChangeForm(PasswordChangeForm):
